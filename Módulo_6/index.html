@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Troca-Folha — feira de troca de plantas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== CABEÇALHO (ID + FLEXBOX) ===== -->
+<header id="topo">
+  <div class="container barra">
+    <a class="logo" href="#topo">
+      <span class="logo-marca" aria-hidden="true">🌿</span>
+      Troca-Folha
+    </a>
+    <nav>
+      <ul class="menu">
+        <li><a href="#plantas">Plantas</a></li>
+        <li><a href="#como">Como funciona</a></li>
+        <li><a href="#modelo">Box Model</a></li>
+        <li><a href="#visitar">Visitar</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<main>
+  <div class="container">
+    <section class="hero">
+      <p class="hero-data">Sábado, 4 de outubro · Praça Benedito Calixto</p>
+      <h1>Traga uma muda,<br>leve outra pra casa.</h1>
+      <p>A Troca-Folha é uma feira de troca de plantas entre vizinhos. Não se compra nada: cada pessoa chega com uma muda enraizada e sai com outra, junto com as instruções de quem cuidou dela.</p>
+      <div class="grupo-botoes">
+        <a class="botao botao-principal" href="#visitar">Reservar minha vaga</a>
+        <a class="botao botao-secundario" href="#como">Ver como funciona</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== GRID DE PLANTAS ===== -->
+  <section class="secao" id="plantas">
+    <div class="container">
+      <h2>Mudas disponíveis nesta edição</h2>
+      <div class="grade-plantas">
+
+        <article class="card card-destaque">
+          <h3>Costela-de-adão</h3>
+          <p class="card-tipo">Trazida por Dona Neusa · 12 mudas</p>
+          <p>Cresce rápido em vaso grande e aceita meia-sombra. A planta-mãe está na mesma varanda há dezenove anos e já rendeu mudas para meio quarteirão.</p>
+        </article>
+
+        <article class="card">
+          <h3>Manjericão roxo</h3>
+          <p class="card-tipo">Horta do Beco · 8 mudas</p>
+          <p>Precisa de sol direto pela manhã e rega diária no verão.</p>
+        </article>
+
+        <article class="card">
+          <h3>Suculenta rabo-de-burro</h3>
+          <p class="card-tipo">Coletivo Raiz · 15 mudas</p>
+          <p>Rega a cada dez dias. Cada folhinha que cai vira uma muda nova.</p>
+        </article>
+
+        <article class="card">
+          <h3>Samambaia-americana</h3>
+          <p class="card-tipo">Seu Antônio · 6 mudas</p>
+          <p>Gosta de umidade. Borrife água nas folhas em dias secos.</p>
+        </article>
+
+        <article class="card">
+          <h3>Hortelã</h3>
+          <p class="card-tipo">Horta do Beco · 20 mudas</p>
+          <p>Plante em vaso separado, senão toma conta do canteiro inteiro.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMO FUNCIONA (sequência real, por isso numerada) ===== -->
+  <section class="secao" id="como">
+    <div class="container">
+      <h2>Como funciona a troca</h2>
+      <div class="passos">
+        <div class="passo">
+          <div class="passo-num">1</div>
+          <h3>Prepare a muda</h3>
+          <p>Enraíze em um copo ou vaso pequeno pelo menos duas semanas antes.</p>
+        </div>
+        <div class="passo">
+          <div class="passo-num">2</div>
+          <h3>Escreva o cuidado</h3>
+          <p>Uma etiqueta com o nome da planta, sol e frequência de rega.</p>
+        </div>
+        <div class="passo">
+          <div class="passo-num">3</div>
+          <h3>Registre na entrada</h3>
+          <p>Sua muda recebe um número e vai para a mesa correspondente.</p>
+        </div>
+        <div class="passo">
+          <div class="passo-num">4</div>
+          <h3>Escolha a sua</h3>
+          <p>A troca abre às 10h. Uma muda entregue dá direito a uma muda escolhida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEMONSTRAÇÃO DO BOX MODEL ===== -->
+  <section class="secao" id="modelo">
+    <div class="container">
+      <div class="texto-duplo">
+        <div>
+          <h2>O Box Model na prática</h2>
+          <p>Todo elemento HTML é uma caixa formada por quatro camadas. A caixa ao lado mostra cada uma delas com uma cor diferente: o conteúdo no centro, o padding em volta, a borda marrom e, por fim, a margin separando a caixa do resto da página.</p>
+        </div>
+        <div class="caixa-modelo">
+          <div class="caixa-borda">
+            <div class="caixa-conteudo">Conteúdo do elemento</div>
+          </div>
+          <div class="legenda-modelo">
+            <span><i class="amostra" style="background:#e9b33a"></i> margin</span>
+            <span><i class="amostra" style="background:#5c4632"></i> border</span>
+            <span><i class="amostra" style="background:#7fb432"></i> padding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHAMADA FINAL ===== -->
+  <section class="secao" id="visitar">
+    <div class="container">
+      <h2>Garanta sua vaga</h2>
+      <p>São 80 lugares por edição, distribuídos por ordem de inscrição. A entrada é gratuita e a muda é o único ingresso.</p>
+      <div class="grupo-botoes" style="margin-top: 24px;">
+        <button class="botao botao-principal" type="button">Reservar minha vaga</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== RODAPÉ ===== -->
+<footer class="rodape">
+  <div class="container rodape-conteudo">
+    <p>Troca-Folha · Feira de troca de plantas · São Paulo</p>
+    <p><a href="#topo">Voltar ao topo</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
