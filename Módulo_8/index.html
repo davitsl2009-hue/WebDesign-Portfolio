@@ -21,6 +21,7 @@
     <nav>
       <ul class="menu">
         <li><a href="#plantas">Plantas</a></li>
+        <li><a href="#cadastro">Cadastrar</a></li>
         <li><a href="#como">Como funciona</a></li>
         <li><a href="#modelo">Box Model</a></li>
         <li><a href="#visitar">Visitar</a></li>
@@ -87,6 +88,20 @@
 
       </div>
       <p id="contador-favoritos" class="contador">Nenhuma muda favoritada ainda.</p>
+    </div>
+  </section>
+
+  <!-- ===== CADASTRO DE PLANTA (aula de DOM) ===== -->
+  <section class="secao" id="cadastro">
+    <div class="container">
+      <h2>Cadastre sua muda</h2>
+      <p>Vai trazer uma planta que não está na lista? Adicione aqui e ela aparece direto na galeria acima.</p>
+      <div class="campo-cadastro">
+        <input type="text" id="campo-nome-planta" placeholder="Nome da planta">
+        <input type="text" id="campo-nome-dono" placeholder="Seu nome ou apelido">
+        <button id="botao-adicionar-planta" class="botao botao-principal" type="button">Adicionar à lista</button>
+      </div>
+      <p id="mensagem-cadastro" class="contador"></p>
     </div>
   </section>
 
@@ -161,9 +176,6 @@
     <p><a href="#topo">Voltar ao topo</a></p>
   </div>
 </footer>
-
-<!-- O script fica no fim do body: assim ele só roda depois que
-     todos os elementos do HTML acima já existem na página. -->
 <script src="script.js"></script>
 </body>
 </html>
